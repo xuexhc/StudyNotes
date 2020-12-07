@@ -171,7 +171,7 @@ target属性可以定义被链接的文档在何处显示
   <style type="text/css">
     body {background-color:black}
     p {color:yellow}
-    </style>
+  </style>
   ```
 
 - `<meta>`元素
@@ -333,7 +333,7 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 
 ```HTML
 <form>
-First Name:<input type="text" name="firstname">
+  First Name:<input type="text" name="firstname">
 </form>
 ```
 
