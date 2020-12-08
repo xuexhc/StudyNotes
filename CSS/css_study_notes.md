@@ -73,7 +73,7 @@ body {text-align:justify;}
 
 用来指定文本中的大写或小写字母
 
-`uppercase`：全部大写
+`uppercase`：全部大写  
 `lowercase`：全部小写
 `capitalize`：首字母大写
 
@@ -87,8 +87,48 @@ p.uppercase{text-transform:uppercase;}
 p {text-indent:20px;}
 ```
 
+## 文本间空间
 
+```CSS
+p {letter-spacing:2px;}
+```
 
+## 行与行间空间
+
+```CSS
+p {line-height:150%;}
+```
+
+## 元素的文本方向
+
+```CSS
+
+```
+
+## 单词间的空白空间
+
+```CSS
+p {word-spacing:30px;}
+```
+
+## 文本垂直对齐图像
+
+```CSS
+p {vertical-align:text-top};
+p {vertical-align:text-bottom;}
+```
+
+## 文本阴影
+
+```CSS
+p {text-shadow:2px 2px red;}
+```
+
+## CSS链接
+
+```CSS
+
+```
 
 
 
