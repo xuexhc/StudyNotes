@@ -103,7 +103,7 @@ target属性可以定义被链接的文档在何处显示
 ## HTML创建电子邮箱链接
 
 ```HTML
-<a href="mailto:xuexhc@outlook?cc=xuexhc@gmail.com&bccxuexhc@163.com&Subject=Hello%20again&body=Thank%20You target="_blank">sent mail</a>
+<a href="mailto:xuexhc@outlook?cc=xuexhc@gmail.com&bcc=xuexhc@163.com&subject=Hello%20again&body=Thank%20You" target="_blank">sent mail</a>
 ```
 
 |参数                  |描述              |
@@ -263,7 +263,7 @@ CSS可以通过以下方式添加到HTML中
 - 有序列表
 
 ```HTML
-<ol start="50" type="A">
+<ol start="50">
   <li>Coffee</li>
   <li>Tea</li>
 </ol>
@@ -371,9 +371,9 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 ```HTML
 <form>
   <select name="drink">
-    <option value="Coffee">coffee</option>
-    <option value="Tea" selected>tea</option>
-    <option value="milk">milk</option>
+    <option value="Coffee">Coffee</option>
+    <option value="Tea" selected>Tea</option>
+    <option value="milk">Milk</option>
   </select>
 </form>
 ```
@@ -394,10 +394,13 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 
 - 带边框表单
 
+`<fieldset>`标签在表单周围绘制边框<br />
+`<legend>`标签定义表单标题
+
 ```HTML
 <form>
   <fieldset>
-    <legend style="text-align="center">Title</legend>
+    <legend style="text-align:center">Title</legend>
     Name:<input type="text" size="10">
     Email:<input type="text" size="10">
     Tele:<input type="text" size="10">
