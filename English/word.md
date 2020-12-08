@@ -1,0 +1,67 @@
+|word|chinese|
+|:-  |:-|
+|charset |字符集|
+|title   |标题|
+|head    |头|
+|body|身体|
+|heading|标题|
+|paragraph|段落|
+|target|目标|
+|default|默认|
+|content|内容|
+|parent|父母|
+|subject|主题|
+|border|边界|
+|class|类|
+|style|样式|
+|font|字体|
+|size|大小|
+|bold|粗体|
+|italic|斜体|
+|subscript|下标|
+|superscript|上标|
+|samp|样品|
+|address|地址|
+|abbreviation|缩写|
+|acronym|首字母缩写|
+|quote|引用|
+|blockquote|块引用|
+|insert|插入|
+|delete|删除|
+|base|基础|
+|stylesheet|样式表|
+|type|类型|
+|keywords|关键字|
+|description|描述|
+|author|作者|
+|refresh|刷新|
+|script|脚本|
+|shortcut icon|快捷图标|
+|header|页眉|
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
+|||
