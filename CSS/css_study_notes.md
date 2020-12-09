@@ -68,7 +68,16 @@ body {text-align:justify;}
 ```
 
 - 文本修饰
-?
+
+- `text-decoration`:设置或删除文本的装饰
+
+```CSS
+a {text-decoration:none;}
+h1 {text-decoration:overline;}
+h2 {text-decoration:line-through;}
+h3 {text-decoration:underline;}
+```
+
 - 文本转换
 
 用来指定文本中的大写或小写字母
@@ -101,8 +110,10 @@ p {line-height:150%;}
 
 ## 元素的文本方向
 
-```CSS
+从右到左书写
 
+```CSS
+p {direction:rtl;}
 ```
 
 ## 单词间的空白空间
@@ -124,13 +135,124 @@ p {vertical-align:text-bottom;}
 p {text-shadow:2px 2px red;}
 ```
 
-## CSS链接
+## CSS字体
+
+- 通用字体系列：拥有相似外观字体系统组合
+- 特定字体系列：一个特定的字体系列
 
 ```CSS
-
+p {font-family:"Times New Roman", Times, Serif;}
+p {font-variant:small-caps;} /* 小型大写字体 */
 ```
 
+## CSS字体样式
 
+```CSS
+p {font-style:normal;}
+p {font-style:italic;}
+p {font-style:oblique;}
+```
+
+## CSS字体大小
+
+```CSS
+p {font-size:12px;}
+p {font-size:2.5em;} /* 40px/16=2.5em */
+body {font-size:100%;}
+```
+
+## CSS链接
+
+|链接状态|描述|
+|:-|:-|
+|a:link|正常，为访问过的链接|
+|a:visited|已访问过的链接|
+|a:hover|鼠标放在链接上时|
+|a:active|链接被点击那一刻|
+
+```CSS
+a:link {color:black; text-decoration:none;}
+a:visited {color:blue; text-decoration:overline;}
+a:hover {color:pink; text-decoration:line-through;}
+a:active {color:green; text-decoration:underline; background-color:black; font-size:50px; font-family:Georgia, serif;}
+```
+
+## CSS 列表样式图像属性
+
+```CSS
+ul {
+list-style-type:none;
+padding:0px;
+margin:0px;}
+
+ul li {
+background-image:url ('');
+background-repeat:no-repeat;
+background-position:0px 5px;
+padding-left;14px;
+}
+```
+
+- 移除默认设置
+
+```CSS
+ul {
+list-style-type:none;
+padding:0px;
+margin:0px;
+}
+```
+
+## CSS表格
+
+```CSS
+table {border-collapse:collapse;}
+
+table th td {
+border:1px solid blue;
+}
+
+th {height:20px;}
+
+td{
+text-align:center;
+vertical-align:bottom;
+background-color:white;
+color:green;  
+}
+```
+
+- 标题位置
+
+```CSS
+caption {caption-side:bottom;}
+```
+
+## CSS边框
+
+- dotted：点线边框
+- dashed：虚线边框
+- solid：实线边框
+- double：两个边框，两个边框的宽度和`border-width`值相同
+- groove：3D沟槽边框，取决于边框颜色
+- ridge：3D脊边框，取决于边框颜色
+- inset：3D嵌入边框，取决于边框颜色
+- outset：3D突出边框，取决于边框颜色
+
+```CSS
+p {border-style:none;}
+```
+
+- 单独设置各边
+
+```CSS
+p {
+border-top-style:solid;
+border-right-style:dotted;
+border-bottom-style:solid;
+border-left-style:dotted;
+}
+```
 
 
 
