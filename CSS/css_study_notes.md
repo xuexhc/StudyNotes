@@ -254,6 +254,32 @@ border-left-style:dotted;
 }
 ```
 
+## CSS轮廓
+
+```CSS
+p {outline:15px solid red;}
+```
+
+## CSS外边距
+
+定义元素周围的空间
+
+```CSS
+p {
+margin-top:10px;
+margin-left:10%;
+margin-right:10cm;
+}
+```
+
+## CSS填充
+
+定义元素边框与元素内容之间的空间
+
+```CSS
+p {padding-top:10px;}
+```
+
 
 
 
