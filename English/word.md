@@ -110,9 +110,9 @@
 |thin|瘦|
 |medium|中|
 |require|要求|
-|||
-|||
-|||
+|outline|轮廓|
+|inherit|继承|
+|length|长度|
 |||
 |||
 |||
