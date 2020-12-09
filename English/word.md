@@ -1,8 +1,8 @@
 |word|chinese|
 |:-  |:-|
-|charset |字符集|
-|title   |标题|
-|head    |头|
+|charset|字符集|
+|title|标题|
+|head|头|
 |body|身体|
 |heading|标题|
 |paragraph|段落|
@@ -86,30 +86,30 @@
 |document|文件|
 |onclick|点击|
 |function|功能|
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
-|||
+|repeat|重复|
+|attachment|附件|
+|position|位置|
+|fixed|固定的|
+|through|穿过|
+|over|在...上面|
+|uppercase|大写|
+|lowercase|小写|
+|capitalize|大写|
+|transform|转换|
+|indent|缩进|
+|letter|字母|
+|direction|方向|
+|shadow|阴影|
+|normal|正常|
+|oblique|倾斜|
+|variant|变形|
+|dotted|有斑点的|
+|dashed|虚线|
+|hidden|隐蔽|
+|thick|粗|
+|thin|瘦|
+|medium|中|
+|require|要求|
 |||
 |||
 |||
