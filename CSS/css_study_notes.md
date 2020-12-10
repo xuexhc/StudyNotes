@@ -280,9 +280,121 @@ margin-right:10cm;
 p {padding-top:10px;}
 ```
 
+## CSS分组选择器
 
+```CSS
+h1, h2, h3 {color:red;}
+```
 
+## CSS嵌套选择器
 
+- `p{}`：为所有p元素指定一个样式
+- `.marked{}`：为所有class="marked"的元素指定一个样式
+- `.marked p{}`：为所有class="marked"元素中的p元素指定一个样式
+- `p.marked{}`：为所有class="marked"的p元素指定一个样式
+
+## CSS尺寸
+
+```CSS
+P {
+max-height:20px;
+max-width:50%;
+min-height:20px;
+}
+```
+
+## CSS隐藏元素
+
+`display:none`:不会占用任何空间
+`visibility:hidden`:仍占用空间，影响布局
+```CSS
+h1.hidden {
+display:none;
+visibility:hidden;
+}
+```
+
+## CSS块元素和内联元素转换
+
+```CSS
+li {display:inline;}
+span {display:block;}
+```
+
+## CSS定位
+
+- `static`：静态定位，无任何变化
+
+```CSS
+p {position:static;}
+```
+
+- `fixed`：相对于浏览器窗口固定，鼠标滚动不会移动
+
+```CSS
+p {
+position:fixed;
+top:12px;
+right:20px;
+}
+```
+
+- `relative`：相对正常位置做出调整进行定位
+
+```CSS
+h1 {
+position:relative
+left:-20px;
+}
+```
+
+- `absolute`：绝对定位的元素的位置相对于最近已定位父元素（父元素定位不能为static），如果没有已定位父元素、那就相对于<html>
+
+```CSS
+p {
+position:absolute;
+left:20px;}
+```
+
+- `sticky`：基于用户滚动来定位
+
+```CSS
+div {
+border:2px solid red;
+position:sticky;
+top:0;}
+```
+
+## CSS重叠元素
+
+`z-index`：属性指定一个元素的堆叠顺序
+
+```CSS
+img {
+position:absolute;
+z-index:-1}
+```
+
+## CSS裁剪元素外形
+
+```CSS
+img {
+clip:rect(0px,200px,120px,0px;)
+}
+```
+
+## CSS使用滚动条显示溢出内容
+
+```CSS
+p {
+overflow:scroll;//显示滚动条
+overflow:hidden;//隐藏滚动条
+overflow:auto;//自动，显示滚动条
+overflow:visible;//直接显示全部内容，不显示滚动条
+}
+```
+
+## 
 
 
 
