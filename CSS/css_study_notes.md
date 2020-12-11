@@ -385,17 +385,54 @@ clip:rect(0px,200px,120px,0px;)
 
 ## CSS使用滚动条显示溢出内容
 
+`overflow`只工作于指定高度的块元素上
+
 ```CSS
 p {
-overflow:scroll;//显示滚动条
-overflow:hidden;//隐藏滚动条
-overflow:auto;//自动，显示滚动条
-overflow:visible;//直接显示全部内容，不显示滚动条
+overflow:scroll;//内容会被修剪，显示滚动条
+overflow:hidden;//内容会被修剪，其余内容不可见
+overflow:auto;//如果内容被修剪，则显示滚动条
+overflow:visible;//内容不会被修剪，显示在元素框外
 }
 ```
 
-## 
+## CSS浮动
 
+使元素向左或向右移动，周围元素也会被重新排列
+
+```CSS
+img {float:left;}
+```
+
+`clear`属性清除浮动,元素两侧不能出现浮动元素
+
+```
+img {float:left;}
+.text_line {clear:both;}
+```
+
+## CSS对齐
+
+- 元素居中
+
+```CSS
+div {margin:auto;}
+```
+
+- 文字居中
+
+```CSS
+p {text-align:center;}
+```
+
+- 图片居中
+
+```CSS
+img {
+display:block;
+margin:auto;
+}
+```
 
 
 
