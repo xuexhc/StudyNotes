@@ -434,7 +434,149 @@ margin:auto;
 }
 ```
 
+- 使用定位左右对齐(`body`元素设置`margin`和`padding`)
 
+```CSS
+.right {
+position:absolute;
+right:0px;
+width:10px;
+padding:10px;
+border:1px solid red;
+}
+```
+
+- 使用padding水平垂直居中对齐
+
+```CSS
+ div {
+ border:1px solid red;
+ padding:70px 0px;
+ text-align:center;
+ }
+```
+
+- 使用`line-height`水平垂直居中对齐
+
+```CSS
+.center {
+line-height:100px;
+height:100px;
+border:1px solid red;
+text-align:center;
+}
+
+.center p {
+line-height:1.5;
+dispaly:inline-block;
+vertical-align:middle;
+}
+```
+
+- 使用`position`和`transform`水平垂直居中对齐
+
+```CSS
+
+```
+
+## CSS组合选择符
+
+- 后代选择器
+
+选择某元素中所有子元素
+
+```CSS
+div p {background-color:black;}
+```
+
+- 子元素选择器
+
+选择某元素中所有直接子元素
+
+```CSS
+div>p {text-align:center;}
+```
+
+- 相邻兄弟选择器
+
+选择紧接在另一元素后的元素，二者由相同的父元素
+
+```CSS
+div+p {background-color:yellow;}/*选择在div元素后的第一个p元素*/
+```
+
+- 后续兄弟选择器
+
+选择指定元素之后的所有相邻兄弟元素
+
+```CSS
+div~p {background-color;}
+```
+
+## CSS伪类
+
+伪类是用来添加一些选择器的特殊效果
+
+- 选择器:伪类 {属性:值;}
+
+```CSS
+a:visited {color:red;}
+```
+
+- 伪类+CSS类配合使用
+
+```CSS
+a.red:visited {color:red;}
+```
+
+
+## CSS伪元素
+
+对元素中的特定内容进行操作
+
+- 选择器:伪元素 {属性:值;}
+
+-`first-line`伪元素用于向文本首行设置特殊样式，只能用于块级元素
+
+```CSS;
+p:first-line {color:red;}
+```
+
+- `first-letter`伪元素用于向文本的首字母设置特殊样式
+
+```CSS
+p:first-letter {text-decoration:underline;}
+```
+
+-伪元素+CSS类配合使用
+
+```CSS
+p.red:first-letter {color:red;}
+```
+
+- 多个伪元素组合
+
+```CSS
+p:first-line {color:blue;}
+p:first-letter {color:red;}
+```
+
+- `before`伪元素和`after`伪元素可以在元素前后插入新的内容
+
+```CSS
+h1:before {
+content:url("1.jpg");}
+
+h1:after {
+content:"123";}
+```
+
+## CSS导航栏
+
+
+```CSS
+
+```
 
 
 
