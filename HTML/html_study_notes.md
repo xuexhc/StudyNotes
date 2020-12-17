@@ -122,10 +122,12 @@ target属性可以定义被链接的文档在何处显示
 
 图像边框：`border="10"`<br />
 图像替代文本：`alt="替代文本信息"`
+图像延迟请求加载资源（懒加载）：`loading="lazy"`
+图像默认加载：`loading="eager"`
 
 ```HTML
 <a href="https://www.baidu.com">
-<img src="url" width="10" height="10" border="10" alt="smiley"/>
+<img src="url" width="10" height="10" border="10" alt="smiley" loading="lazy" />
 </a>
 ```
 
