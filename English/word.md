@@ -1,4 +1,4 @@
-|word|chinese|
+|Word|Translate|
 |:-  |:-|
 |charset|字符集|
 |title|标题|
