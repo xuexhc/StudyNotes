@@ -295,21 +295,34 @@ CSS可以通过以下方式添加到HTML中
 ## 表格
   
 - `<table>`:表格，`<tr>`：表格行，`<td>`：单元格
-- `<th>`：表格表头，`<caption>`：定义标题，`cellpadding`定义单元格边距，`cellspacing`定义单元格间距
+- `<th>`：表格表头，`<caption>`：定义标题，`cellpadding`定义单元格边距，`cellspacing`定义单元格间距，`rowspan`定义跨行合并，`colspan`定义跨列合并
+- `<thead>`组合表格表头内容，`<tbody>`组合表格主体内容，`<tfoot>`组合表格页脚内容
+- `<colgroup>`元素对表格中的列进行组合，`<col>`规定每一列的列属性，`<span>`规定列组横跨的列数
 
 ```HTML
 <table border="1" cellpadding="10">
   <caption>Table Title</caption>
-  <tr>
-    <th>Header 1</th>
-    <th>Header 2</th>
-  </tr>
-  <tr>
-    <td>Row1 Cell1</td>
-    <td>Row1 Cell2</td>
-  </tr>
-    <td>Row2 Cell1</td>
-    <td>Row2 Cell2</td>
+  <colgroup>
+    <col span="2" style="background-color:red;">
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row1 Cell1</td>
+      <td>Row1 Cell2</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Row2 Cell1</td>
+      <td>Row2 Cell2</td>
+    </tr>
+  </tfoot>
 </table>
 ```
 
@@ -336,6 +349,7 @@ CSS可以通过以下方式添加到HTML中
 ```
 
 - 自定义列表，是项目及其注释的组合
+- `<dl>`定义一个描述列表，`<dt>`定义一个描述列表的名字，`<dd>`对描述列表中的名字进行描述
 
 ```HTML
 <dl>
@@ -377,7 +391,7 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 
 ## `<span>`元素
 
-`<span>`元素是内联元素，可用于设置文本样式属性
+`<span>`元素是内联元素，可用于为部分文本设置样式属性
 
 ## 表单
 
@@ -386,7 +400,7 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 
 - 文本域
 
-默认宽度2个字符
+默认宽度20个字符
 
 ```HTML
 <form>
@@ -412,11 +426,12 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 ```
 
 - 复选框
+- 预选`<input>`元素：`checked`
 
 ```HTML
 <form>
   Coffee<input type="checkbox" name="drink" value="coffee">
-  Milk<input type="checkbox" name="drink" value="milk">
+  Milk<input type="checkbox" name="drink" value="milk" checked="checked">
 </form>
 ```
 - 提交按钮
@@ -424,6 +439,7 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 ？
 
 - （预选）下拉列表框
+- `<select>`创建下拉列表，`<option>`定义下拉列表中的一个选项
 
 ```HTML
 <form>
@@ -462,6 +478,35 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
     Email:<input type="text" size="10">
     Tele:<input type="text" size="10">
   </fieldset>
+</form>
+```
+
+- 定义重置按钮
+
+```HTML
+<input type="reset">
+```
+
+- `<optgroup>`标签用于把选项组合在一起，`label`属性为选项组规定描述标签
+
+```HTML
+<form>
+  <select>
+      <optgroup label="groupA">
+        <option value="audi">Audi</option>
+      </optgroup>
+  </select>
+</form>
+```
+
+- `<datalist>`标签定义了`input`元素可能的选项列表
+
+```HTML
+<form>
+  <input list="bowsers">
+  <datalist id="bowsers">
+    <option value="Chrome"></option>
+  </datalist>
 </form>
 ```
 
