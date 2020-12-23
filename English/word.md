@@ -124,7 +124,6 @@
 |clip|修剪|
 |scroll|滚动|
 |overflow|溢出|
-|container|容器|
 |hypertext|超文本|
 |markup|标记|
 |language|语言|
@@ -139,9 +138,9 @@
 |invalid|无效的|
 |location|位置|
 |article|文章|
-|||
-|||
-|||
+|sex|性别|
+|vehicle|车辆|
+|optgroup|选择组|
 |||
 |||
 |||
