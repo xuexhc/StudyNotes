@@ -141,10 +141,9 @@
 |sex|性别|
 |vehicle|车辆|
 |optgroup|选择组|
-|||
-|||
-|||
-|||
+|anchor|锚|
+|variable|变量|
+|property|属性|
 |||
 |||
 |||
