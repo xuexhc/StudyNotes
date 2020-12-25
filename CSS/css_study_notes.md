@@ -48,6 +48,7 @@ body {background-color:red;}
 垂直平铺：`repeat-y`
 不平铺：`no-repeat`
 改变图片位置：`background-position:right top`
+背景图像是否固定或随着页面的其余部分而滚动：`background-attachment`
 
 ```CSS
 body {background-image:url('image.jpg');
@@ -55,11 +56,17 @@ body {background-image:url('image.jpg');
       background-position:right top;}
 ```
 
+背景简写(color-image-repeat-attachment-position)
+
+```CSS
+body {background:url('image.jpg') no-repeat fixed top;}
+```
+
 ## 文本
 
 - 文本对齐
   - 居中/左右对齐：`center/left/right`
-  - `justify`：每一行宽度相等，左右外边距对齐
+  - `justify`（两端对齐）：每一行宽度相等，左右外边距对齐
 
 ```CSS
 h1 {text-align:center;}
@@ -122,6 +129,11 @@ p {direction:rtl;}
 p {word-spacing:30px;}
 ```
 
+## 元素内禁用文字环绕
+
+```CSS
+p {white-space:nowrap;}
+```
 ## 文本垂直对齐图像
 
 ```CSS
