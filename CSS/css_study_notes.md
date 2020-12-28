@@ -30,6 +30,49 @@
 p.center{text-align:center;}
 ```
 
+## 包含选择器
+
+- 指定目标选择器必须处在某个选择器对应的元素内部(允许多层嵌套标签匹配相应样式)
+
+```CSS
+div p {text-align:center;}
+```
+
+- 使class名为first的标签里面所有名为p的标签设定样式
+
+```CSS
+.first p {text-align:center;}
+```
+
+## 子选择器
+
+- 与**包含选择器**相同，但嵌套标签并不适用
+
+```CSS
+div>p {
+text-align:center;
+}
+```
+
+## 补充子选择器
+
+- 使class名为first的标签里面所有名为p的子代标签设定样式
+
+```CSS
+.first>p {text-align:center;}
+```
+
+## 通用选择器
+
+- 匹配HTML中所有元素标签
+
+```CSS
+<style>
+  * {text-align:center;}
+</style>
+```
+
+
 ## 多重样式表
 
 - 优先级：内联样式>内部样式>外部样式>浏览器默认样式
@@ -59,7 +102,7 @@ body {background-image:url('image.jpg');
 背景简写(color-image-repeat-attachment-position)
 
 ```CSS
-body {background:url('image.jpg') no-repeat fixed top;}
+body {background:red url('image.jpg') no-repeat fixed top;}
 ```
 
 ## 文本
