@@ -144,8 +144,8 @@
 |anchor|锚|
 |variable|变量|
 |property|属性|
-|||
-|||
+|external|外部|
+|internal|内部|
 |||
 |||
 |||
