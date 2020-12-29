@@ -194,6 +194,7 @@ p {text-shadow:2px 2px red;}
 
 - 通用字体系列：拥有相似外观字体系统组合
 - 特定字体系列：一个特定的字体系列
+- 字体名称超一个字，必须用引号，多个字体之间用逗号隔开
 
 ```CSS
 p {font-family:"Times New Roman", Times, Serif;}
@@ -203,9 +204,9 @@ p {font-variant:small-caps;} /* 小型大写字体 */
 ## CSS字体样式
 
 ```CSS
-p {font-style:normal;}
-p {font-style:italic;}
-p {font-style:oblique;}
+p {font-style:normal;}//正常
+p {font-style:italic;}//斜体
+p {font-style:oblique;}//斜体，当字体没有`italic`属性时使用
 ```
 
 ## CSS字体大小
@@ -214,6 +215,28 @@ p {font-style:oblique;}
 p {font-size:12px;}
 p {font-size:2.5em;} /* 40px/16=2.5em */
 body {font-size:100%;}
+```
+
+## CSS字体粗细
+
+```CSS
+p {font-weight:bold;}
+```
+
+## CSS字体变形
+
+- 以小型大写字体显示文本 
+
+```CSS
+p {font-variant:small-caps;}
+```
+
+## CSS字体属性简写
+
+(font-style font-variant font-weight font-size/line-height font-family)
+
+```CSS
+p {font:italic small-caps bold 30px Georgia, serif;}
 ```
 
 ## CSS链接
