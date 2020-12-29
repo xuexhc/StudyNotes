@@ -236,14 +236,14 @@ p {font-variant:small-caps;}
 (font-style font-variant font-weight font-size/line-height font-family)
 
 ```CSS
-p {font:italic small-caps bold 30px Georgia, serif;}
+p {font:italic small-caps bold 30px/100px Georgia, serif;}
 ```
 
 ## CSS链接
 
 |链接状态|描述|
 |:-|:-|
-|a:link|正常，为访问过的链接|
+|a:link|正常，未访问过的链接|
 |a:visited|已访问过的链接|
 |a:hover|鼠标放在链接上时|
 |a:active|链接被点击那一刻|
