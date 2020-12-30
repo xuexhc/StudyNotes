@@ -255,7 +255,14 @@ a:hover {color:pink; text-decoration:line-through;}
 a:active {color:green; text-decoration:underline; background-color:black; font-size:50px; font-family:Georgia, serif;}
 ```
 
-## CSS 列表样式图像属性
+## CSS 不同列表项标记
+
+```CSS
+ul {list-style-type:circle;}
+ol {list-style-type:lower-alpha;}
+```
+
+## CSS列表样式图像属性(浏览器兼容方案)
 
 ```CSS
 ul {
@@ -281,6 +288,12 @@ margin:0px;
 }
 ```
 
+- 列表属性简写（list-style-type list-style-position list-style-image）
+
+```CSS
+ul {list-style:square inside url("#");}
+```
+
 ## CSS表格
 
 ```CSS
@@ -296,7 +309,8 @@ td{
 text-align:center;
 vertical-align:bottom;
 background-color:white;
-color:green;  
+color:green;
+padding:2px;
 }
 ```
 
@@ -305,6 +319,12 @@ color:green;
 ```CSS
 caption {caption-side:bottom;}
 ```
+## CSS盒子模型
+
+- Margin：清除边框外的区域
+- Border：围绕在内边距和内容外的边框
+- Padding：清楚内容周围区域
+- Content：盒子的内容
 
 ## CSS边框
 
