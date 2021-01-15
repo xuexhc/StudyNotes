@@ -180,7 +180,7 @@ p {white-space:nowrap;}
 ## 文本垂直对齐图像
 
 ```CSS
-p {vertical-align:text-top};
+p {vertical-align:text-top;}
 p {vertical-align:text-bottom;}
 ```
 
