@@ -46,7 +46,7 @@ HTML标记标签称为HTML标签
 属性是HTML元素提供的附加信息
 
 ```HTML
-<a href="www.baidu.com">this is a link</a>
+<a href="https://www.baidu.com/">this is a link</a>
 ```
 
 - HTML元素可以设置**属性**
@@ -123,16 +123,16 @@ HTML标记标签称为HTML标签
 - `<q>`：定义短引用（周围会插入引号）
 - `<cite>`：定义（书籍、电影、绘画等）的标题
 - `<dfn>`：定义一个定义项目
-GUOGUO`<`>
+
 ```HTML
 <abbr title="xuehuicong">xhc</abbr>
-<ado dir="rtl">right to left</ bdo>
+<bdo dir="rtl">right to left</ bdo>
 ```
 
 ## HTML链接
 
 ```HTML
-<a href="https://www.baidu.com" target="_blank" rel="noopener noreferrer">Link baidu</a>
+<a href="https://www.baidu.com/" target="_blank" rel="noopener noreferrer">Link baidu</a>
 ```
 
 window.opener值变为null，让网站更安全：`rel="noopener noreferrer"`<br />
@@ -175,7 +175,7 @@ target属性可以定义被链接的文档在何处显示
 
 图像边框：`border="10"`<br />
 图像替代文本：`alt="替代文本信息"`<br />
-图像延迟请求加载资源（懒加载）：`loading="lazy"`<br />
+图像延迟请求加载资源，优先加载游览器可视区域内容（懒加载）：`loading="lazy"`<br />
 图像默认加载：`loading="eager"`
 浮动图像：`float:right`
 
