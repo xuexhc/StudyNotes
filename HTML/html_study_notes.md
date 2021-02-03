@@ -503,9 +503,10 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 
 ```HTML
 <form>
-  <input list="bowsers">
+  <input list="bowsers" name="bowser">
   <datalist id="bowsers">
-    <option value="Chrome"></option>
+    <option value="Chrome">
+    <option value="IE">
   </datalist>
 </form>
 ```
