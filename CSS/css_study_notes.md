@@ -62,6 +62,26 @@ text-align:center;
 .first>p {text-align:center;}
 ```
 
+## 兄弟选择器
+
+- A元素后面所有B元素设置样式
+
+```CSS
+h1 ~ p {
+    color:red;
+}
+```
+
+## 相邻兄弟选择器
+
+- A元素后面第一个B元素设置样式
+
+```CSS
+h1 + p {
+    color:red;
+}
+```
+
 ## 通用选择器
 
 - 匹配HTML中所有元素标签
@@ -459,6 +479,7 @@ left:20px;}
 ```CSS
 div {
 border:2px solid red;
+position: -webkit-sticky; /* Safari */
 position:sticky;
 top:0;}
 ```
@@ -692,6 +713,8 @@ content:"123";}
 
 
 
+补充
 
+margin:auto 0; 只对块级元素起作用
 
 
