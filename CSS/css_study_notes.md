@@ -486,7 +486,8 @@ top:0;}
 
 ## CSS重叠元素
 
-`z-index`：属性指定一个元素的堆叠顺序
+`z-index`：属性指定一个元素的堆叠顺序<br />
+如果两个定位元素重叠且没有指定z-index，最后定位在HTML中的元素显示在最前面
 
 ```CSS
 img {
@@ -495,6 +496,8 @@ z-index:-1}
 ```
 
 ## CSS裁剪元素外形
+
+top和bottom是表示距离元素上边界的距离，left和right是表示距离元素左边界的距离
 
 ```CSS
 img {
@@ -517,7 +520,7 @@ overflow:visible;//内容不会被修剪，显示在元素框外
 
 ## CSS浮动
 
-使元素向左或向右移动，周围元素也会被重新排列
+使元素向左或向右移动，周围元素也会被重新排列（浮动元素之前的元素不受影响，之后的元素将围绕它）
 
 ```CSS
 img {float:left;}
@@ -563,6 +566,16 @@ width:10px;
 padding:10px;
 border:1px solid red;
 }
+```
+
+- 使用float左右对齐
+
+如果子元素高度大于父元素，且子元素设置了浮动，那么子元素将溢出，在父元素添加`overflow:auto;`样式清除浮动
+
+```CSS
+.clearfix {overflow:auto;}
+
+.img {float:right;}
 ```
 
 - 使用padding水平垂直居中对齐
