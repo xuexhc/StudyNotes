@@ -674,7 +674,13 @@ a.red:visited {color:red;}
 p:first-line {color:red;}
 ```
 
-- `first-letter`伪元素用于向文本的首字母设置特殊样式
+-`first-child`:选择器匹配其父元素中第一个子元素
+
+```CSS
+p:first-child {background-color:red;}
+```
+
+- `first-letter`伪元素用于向文本的首字母设置特殊样式，只能用于块级元素
 
 ```CSS
 p:first-letter {text-decoration:underline;}
@@ -701,6 +707,18 @@ content:url("1.jpg");}
 
 h1:after {
 content:"123";}
+```
+
+- `p > i:first-child`选择相匹配的所有`p`元素中的第一个`i`元素
+
+```CSS
+p > i:first-child {color:blue;}
+```
+
+-`p:first-child i`选择所有第一个子元素`p`元素中的所有`i`元素
+
+```CSS
+p:first-child i {color:blue;}
 ```
 
 ## CSS导航栏
