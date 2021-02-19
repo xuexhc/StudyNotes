@@ -554,6 +554,7 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 - `src`用于替代这个元素，src 指向的内容会嵌入到文档中当前标签所在的位置
 - `header`标签用于定义文档的页眉
 - `title`属性值可以为元素提供额外的描述信息
+- `tr`、`td`、`th`中文字对齐：valign=top\middle\bottom
 
 
 
