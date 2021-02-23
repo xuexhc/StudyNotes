@@ -513,6 +513,8 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 
 ## 框架
 
+`frameborder="0\1"`：是否开启边框
+
 ```HTML
 <iframe src="url" width="200" height="200" frameborder="0"></iframe>
 ```
