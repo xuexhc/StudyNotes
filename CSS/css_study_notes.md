@@ -294,7 +294,7 @@ ul li {
 background-image:url ('');
 background-repeat:no-repeat;
 background-position:0px 5px;
-padding-left;14px;
+padding-left:14px;
 }
 ```
 
