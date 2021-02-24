@@ -207,7 +207,7 @@ p {vertical-align:text-bottom;}
 ## 文本阴影
 
 ```CSS
-p {text-shadow:2px 2px red;}
+p {text-shadow:2px 2px 2px red;}
 ```
 
 ## CSS字体
