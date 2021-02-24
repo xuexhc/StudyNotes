@@ -218,7 +218,6 @@ p {text-shadow:2px 2px 2px red;}
 
 ```CSS
 p {font-family:"Times New Roman", Times, Serif;}
-p {font-variant:small-caps;} /* 小型大写字体 */
 ```
 
 ## CSS字体样式
