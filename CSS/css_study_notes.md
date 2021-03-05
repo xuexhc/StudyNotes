@@ -438,6 +438,7 @@ visibility:hidden;
 ```CSS
 li {display:inline;}
 span {display:block;}
+p {display:inline-block;}
 ```
 
 ## CSS定位
