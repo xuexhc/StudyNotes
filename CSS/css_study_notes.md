@@ -464,7 +464,7 @@ right:20px;
 ```CSS
 h1 {
 position:relative
-left:-20px;
+left:-20px;//设置在左边缘向左移动20px
 }
 ```
 
