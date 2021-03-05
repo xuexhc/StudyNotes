@@ -476,7 +476,7 @@ position:absolute;
 left:20px;}
 ```
 
-- `sticky`：基于用户滚动来定位
+- `sticky`：基于用户滚动来定位（在跨域特定阈值之前为相对定位，之后为固定定位）
 
 ```CSS
 div {
