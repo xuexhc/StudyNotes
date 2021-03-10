@@ -663,6 +663,31 @@ a:visited {color:red;}
 a.red:visited {color:red;}
 ```
 
+- 使用first-child伪类来选择父元素的第一个子元素
+
+```CSS
+p:first-child {color:red;}
+```
+
+- 匹配所有`p`元素中第一个`i`元素
+
+```CSS
+p > i:first-child {color:red;}
+```
+
+- 匹配所有作为第一个子元素的`p`元素中的所有`i`元素
+
+```CSS
+p:first-child i {color:red;}
+```
+
+- `:focus`伪类：用于选择具有焦点的元素
+
+```CSS
+input:focus {color:red;}
+
+```
+
 
 ## CSS伪元素
 
