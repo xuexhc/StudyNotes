@@ -649,7 +649,7 @@ div~p {background-color;}
 
 ## CSS伪类
 
-伪类是用来添加一些选择器的特殊效果
+伪类用于向某些选择器添加特殊效果
 
 - 选择器:伪类 {属性:值;}
 
@@ -691,7 +691,7 @@ input:focus {color:red;}
 
 ## CSS伪元素
 
-对元素中的特定内容进行操作
+伪元素用于将特殊效果添加到某些选择器
 
 - 选择器:伪元素 {属性:值;}
 
@@ -699,12 +699,6 @@ input:focus {color:red;}
 
 ```CSS;
 p:first-line {color:red;}
-```
-
--`first-child`:选择器匹配其父元素中第一个子元素
-
-```CSS
-p:first-child {background-color:red;}
 ```
 
 - `first-letter`伪元素用于向文本的首字母设置特殊样式，只能用于块级元素
