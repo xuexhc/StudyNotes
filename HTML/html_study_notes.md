@@ -557,6 +557,7 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 - `header`标签用于定义文档的页眉
 - `title`属性值可以为元素提供额外的描述信息
 - `tr`、`td`、`th`中文字对齐：`<tr valign="top\middle\bottom">`
+- `title`属性规定元素的额外信息
 
 
 
