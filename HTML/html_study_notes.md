@@ -178,6 +178,7 @@ target属性可以定义被链接的文档在何处显示
 图像延迟请求加载资源，优先加载游览器可视区域内容（懒加载）：`loading="lazy"`<br />
 图像默认加载：`loading="eager"`<br />
 浮动图像：css:`float:right`
+为图片添加描述性文字：`title="#"`
 
 ```HTML
 <a href="https://www.baidu.com">
