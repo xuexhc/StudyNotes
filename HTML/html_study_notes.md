@@ -446,7 +446,7 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 <form>
   <select name="drink">
     <option value="Coffee">Coffee</option>
-    <option value="Tea" selected>Tea</option>
+    <option value="Tea" selected="selected">Tea</option>
     <option value="milk">Milk</option>
   </select>
 </form>
