@@ -421,8 +421,8 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 
 ```HTML
 <form>
-  Male<input type="radio" name="sex" value="male"><br />
-  Female<input type="radio" name="sex" value="female">
+  Male<input type="radio" name="sex" value="Male"><br />
+  Female<input type="radio" name="sex" value="Female">
 </form>
 ```
 
@@ -431,8 +431,8 @@ eg：`<b>`、`<td>`、`<a>`、`<img>`
 
 ```HTML
 <form>
-  Coffee<input type="checkbox" name="drink" value="coffee">
-  Milk<input type="checkbox" name="drink" value="milk" checked="checked">
+  Coffee<input type="checkbox" name="drink" value="Coffee">
+  Milk<input type="checkbox" name="drink" value="Milk" checked="checked">
 </form>
 ```
 - 提交按钮
