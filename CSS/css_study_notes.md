@@ -152,8 +152,8 @@ h3 {text-decoration:underline;}
 
 用来指定文本中的大写或小写字母
 
-`uppercase`：全部大写  
-`lowercase`：全部小写
+`uppercase`：全部大写<br />  
+`lowercase`：全部小写<br />
 `capitalize`：首字母大写
 
 ```CSS
