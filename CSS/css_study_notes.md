@@ -14,9 +14,6 @@
 
 ```CSS
 #h1 {background-color:red;}
-.center {
-    color:red;
-}
 ```
 
 ## class选择器
