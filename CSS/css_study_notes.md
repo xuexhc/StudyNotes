@@ -13,7 +13,10 @@
 - 为标有特定id的HTML元素指定样式,选择器以`#`定义
 
 ```CSS
-    #h1 {background-color:red;}
+#h1 {background-color:red;}
+.center {
+color:red;
+}
 ```
 
 ## class选择器
