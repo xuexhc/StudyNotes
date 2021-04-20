@@ -15,7 +15,7 @@
 ```CSS
 #h1 {background-color:red;}
 .center {
-color:red;
+    color:red;
 }
 ```
 
