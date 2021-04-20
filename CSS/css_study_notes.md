@@ -10,7 +10,7 @@
 
 ## id选择器
 
-- 为标有特定id的HTML元素指定样式,选择器以`#`定义
+- 为标有特定id的HTML元素指定样式，选择器以`#`定义
 
 ```CSS
 #h1 {background-color:red;}
@@ -21,13 +21,13 @@
 - 用于描述一组元素的样式，可在多个元素中使用，以一个`·`表示
 
 ```CSS
-.center{text.align:center;}
+.center {text.align:center;}
 ```
 
 - 特定HTML元素使用class
 
 ```CSS
-p.center{text-align:center;}
+p.center {text-align:center;}
 ```
 
 ## 包含选择器
@@ -49,8 +49,8 @@ div p {text-align:center;}
 - 与**包含选择器**相同，但嵌套标签并不适用
 
 ```CSS
-div>p {
-text-align:center;
+div > p {
+    text-align:center;
 }
 ```
 
@@ -59,7 +59,7 @@ text-align:center;
 - 使class名为first的标签里面所有名为p的子代标签设定样式
 
 ```CSS
-.first>p {text-align:center;}
+.first > p {text-align:center;}
 ```
 
 ## 兄弟选择器
@@ -88,7 +88,7 @@ h1 + p {
 
 ```CSS
 <style>
-  * {text-align:center;}
+* {text-align:center;}
 </style>
 ```
 
@@ -114,9 +114,11 @@ body {background-color:red;}
 背景图像是否固定或随着页面的其余部分而滚动：`background-attachment`
 
 ```CSS
-body {background-image:url('image.jpg');
-      background-repeat:repeat-x;
-      background-position:right top;}
+body {
+    background-image:url('image.jpg');
+    background-repeat:repeat-x;
+    background-position:right top;
+}
 ```
 
 背景简写(color-image-repeat-attachment-position)
@@ -139,7 +141,7 @@ body {text-align:justify;}
 
 - 文本修饰
 
-- `text-decoration`:设置或删除文本的装饰
+- `text-decoration`：设置或删除文本的装饰
 
 ```CSS
 a {text-decoration:none;}
@@ -157,7 +159,7 @@ h3 {text-decoration:underline;}
 `capitalize`：首字母大写
 
 ```CSS
-p.uppercase{text-transform:uppercase;}
+p.uppercase {text-transform:uppercase;}
 ```
 
 ## 文本缩进
@@ -285,15 +287,16 @@ ol {list-style-type:lower-alpha;}
 
 ```CSS
 ul {
-list-style-type:none;
-padding:0px;
-margin:0px;}
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
+}
 
 ul li {
-background-image:url ('');
-background-repeat:no-repeat;
-background-position:0px 5px;
-padding-left:14px;
+    background-image:url ('');
+    background-repeat:no-repeat;
+    background-position:0px 5px;
+    padding-left:14px;
 }
 ```
 
@@ -301,9 +304,9 @@ padding-left:14px;
 
 ```CSS
 ul {
-list-style-type:none;
-padding:0px;
-margin:0px;
+    list-style-type:none;
+    padding:0px;
+    margin:0px;
 }
 ```
 
@@ -319,17 +322,17 @@ ul {list-style:square inside url("#");}
 table {border-collapse:collapse;}
 
 table th td {
-border:1px solid blue;
+    border:1px solid blue;
 }
 
 th {height:20px;}
 
 td{
-text-align:center;
-vertical-align:bottom;
-background-color:white;
-color:green;
-padding:2px;
+    text-align:center;
+    vertical-align:bottom;
+    background-color:white;
+    color:green;
+    padding:2px;
 }
 ```
 
@@ -364,10 +367,10 @@ p {border-style:none;}
 
 ```CSS
 p {
-border-top-style:solid;
-border-right-style:dotted;
-border-bottom-style:solid;
-border-left-style:dotted;
+    border-top-style:solid;
+    border-right-style:dotted;
+    border-bottom-style:solid;
+    border-left-style:dotted;
 }
 ```
 
@@ -385,9 +388,9 @@ p {outline:15px solid red;}
 
 ```CSS
 p {
-margin-top:10px;
-margin-left:10%;
-margin-right:10cm;
+    margin-top:10px;
+    margin-left:10%;
+    margin-right:10cm;
 }
 ```
 
@@ -416,9 +419,9 @@ h1, h2, h3 {color:red;}
 
 ```CSS
 P {
-max-height:20px;
-max-width:50%;
-min-height:20px;
+    max-height:20px;
+    max-width:50%;
+    min-height:20px;
 }
 ```
 
@@ -428,8 +431,8 @@ min-height:20px;
 `visibility:hidden`:仍占用空间，影响布局
 ```CSS
 h1.hidden {
-display:none;
-visibility:hidden;
+    display:none;
+    visibility:hidden;
 }
 ```
 
@@ -453,9 +456,9 @@ p {position:static;}
 
 ```CSS
 p {
-position:fixed;
-top:12px;
-right:20px;
+    position:fixed;
+    top:12px;
+    right:20px;
 }
 ```
 
@@ -463,8 +466,8 @@ right:20px;
 
 ```CSS
 h1 {
-position:relative
-left:-20px;//设置在左边缘向左移动20px
+    position:relative
+    left:-20px;//设置在左边缘向左移动20px
 }
 ```
 
@@ -472,18 +475,20 @@ left:-20px;//设置在左边缘向左移动20px
 
 ```CSS
 p {
-position:absolute;
-left:20px;}
+    position:absolute;
+    left:20px;
+}
 ```
 
 - `sticky`：基于用户滚动来定位（在跨域特定阈值之前为相对定位，之后为固定定位）
 
 ```CSS
 div {
-border:2px solid red;
-position: -webkit-sticky; /* Safari */
-position:sticky;
-top:0;}
+    border:2px solid red;
+    position: -webkit-sticky; /* Safari */
+    position:sticky;
+    top:0;
+}
 ```
 
 ## CSS重叠元素
@@ -493,8 +498,9 @@ top:0;}
 
 ```CSS
 img {
-position:absolute;
-z-index:-1}
+    position:absolute;
+    z-index:-1
+}
 ```
 
 ## CSS裁剪元素外形
@@ -503,7 +509,7 @@ top和bottom是表示距离元素上边界的距离，left和right是表示距�
 
 ```CSS
 img {
-clip:rect(0px,200px,120px,0px;)
+    clip:rect(0px,200px,120px,0px;)
 }
 ```
 
@@ -513,10 +519,10 @@ clip:rect(0px,200px,120px,0px;)
 
 ```CSS
 p {
-overflow:scroll;//内容会被修剪，显示滚动条
-overflow:hidden;//内容会被修剪，其余内容不可见
-overflow:auto;//如果内容被修剪，则显示滚动条
-overflow:visible;//内容不会被修剪，显示在元素框外
+    overflow:scroll;//内容会被修剪，显示滚动条
+    overflow:hidden;//内容会被修剪，其余内容不可见
+    overflow:auto;//如果内容被修剪，则显示滚动条
+    overflow:visible;//内容不会被修剪，显示在元素框外
 }
 ```
 
@@ -553,8 +559,8 @@ p {text-align:center;}
 
 ```CSS
 img {
-display:block;
-margin:auto;
+    display:block;
+    margin:auto;
 }
 ```
 
@@ -562,11 +568,11 @@ margin:auto;
 
 ```CSS
 .right {
-position:absolute;
-right:0px;
-width:10px;
-padding:10px;
-border:1px solid red;
+    position:absolute;
+    right:0px;
+    width:10px;
+    padding:10px;
+    border:1px solid red;
 }
 ```
 
@@ -583,27 +589,27 @@ border:1px solid red;
 - 使用padding水平垂直居中对齐
 
 ```CSS
- div {
- border:1px solid red;
- padding:70px 0px;
- text-align:center;
- }
+div {
+    border:1px solid red;
+    padding:70px 0px;
+    text-align:center;
+}
 ```
 
 - 使用`line-height`水平垂直居中对齐
 
 ```CSS
 .center {
-line-height:100px;
-height:100px;
-border:1px solid red;
-text-align:center;
+    line-height:100px;
+    height:100px;
+    border:1px solid red;
+    text-align:center;
 }
 
 .center p {
-line-height:1.5;
-dispaly:inline-block;
-vertical-align:middle;
+    line-height:1.5;
+    dispaly:inline-block;
+    vertical-align:middle;
 }
 ```
 
@@ -628,7 +634,7 @@ div p {background-color:black;}
 选择某元素中所有直接子元素
 
 ```CSS
-div>p {text-align:center;}
+div > p {text-align:center;}
 ```
 
 - 相邻兄弟选择器
@@ -636,7 +642,7 @@ div>p {text-align:center;}
 选择紧接在另一元素后的元素，二者由相同的父元素
 
 ```CSS
-div+p {background-color:yellow;}/*选择在div元素后的第一个p元素*/
+div + p {background-color:yellow;}/*选择在div元素后的第一个p元素*/
 ```
 
 - 后续兄弟选择器
@@ -644,7 +650,7 @@ div+p {background-color:yellow;}/*选择在div元素后的第一个p元素*/
 选择指定元素之后的所有相邻兄弟元素
 
 ```CSS
-div~p {background-color;}
+div ~ p {background-color;}
 ```
 
 ## CSS伪类
