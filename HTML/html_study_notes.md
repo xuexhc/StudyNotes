@@ -198,7 +198,7 @@ target属性可以定义被链接的文档在何处显示
 
 - `<base>`元素
 
-  `<base>`标签描述了基本的链接地址/目标目标，该标签作为HTML中所有链接标签的默认链接,放在`<head>`元素中的第一个位置
+  `<base>`标签描述了基本的链接地址/目标目标，该标签作为HTML中所有链接标签的默认链接，放在`<head>`元素中的第一个位置
   
   ```HTML
   <base href="C:\Users\xuexh\OneDrive\Myproject\.vscode\index.html" target="_blank">
@@ -274,7 +274,7 @@ CSS可以通过以下方式添加到HTML中
   <p style="color:blue;">蓝色的段落</p>
   ```
 
-- 内部样式表:在HTML文档头部<head>区域使用<style>元素来包含CSS
+- 内部样式表：在HTML文档头部<head>区域使用<style>元素来包含CSS
   
   ```HTML
   <head>
@@ -285,7 +285,7 @@ CSS可以通过以下方式添加到HTML中
   </head>
   ```
   
-- 外部引用:使用外部CSS文件
+- 外部引用：使用外部CSS文件
 
   ```HTML
   <head>
@@ -295,7 +295,7 @@ CSS可以通过以下方式添加到HTML中
   
 ## 表格
   
-- `<table>`:表格，`<tr>`：表格行，`<td>`：单元格
+- `<table>`：表格，`<tr>`：表格行，`<td>`：单元格
 - `<th>`：表格表头，`<caption>`：定义标题，`cellpadding`定义单元格边距，`cellspacing`定义单元格间距，`rowspan`定义跨行合并，`colspan`定义跨列合并
 - `<thead>`组合表格表头内容，`<tbody>`组合表格主体内容，`<tfoot>`组合表格页脚内容
 - `<colgroup>`元素对表格中的列进行组合，`<col>`规定每一列的列属性，`<span>`规定列组横跨的列数
