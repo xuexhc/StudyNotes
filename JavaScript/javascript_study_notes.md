@@ -436,7 +436,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     
 - 自增/自减和其他运算符
 
-    ```js
+    ```javascript
     let counter = 1;
     alert(2 * ++counter);//4
     
@@ -447,6 +447,55 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     
     
 ### 逗号运算符
+
+
+
+## 值的比较
+
+### 基本比较例子
+
+- 相等：`a == b`
+- 不相等：`a != b`
+
+### 比较结果为Boolean类型
+
+- 比较的结果可以赋值给任意变量
+
+    ```javascript
+    let result = 5 > 2;
+    alert (result);//true
+    ```
+### 字符串比较
+
+- 根据字符大小进行比较（小写字符大于大写字母）
+
+    ```javascript
+    alert ('ABC' > 'AB');//true
+    ```
+### 不同类型间比较
+
+- 先转换至数字类型
+
+    ```javascript
+    alert ('12' > 2);//true
+    ```
+    
+### 严格相等
+
+- 区分`0`和`false`（比较时不会做任何数据类型转换）
+
+    ```javascript
+    alert ('' === false);//false
+    alert (`abc` !== false);//true
+    ```
+### null与undefined
+
+- 使用严格相等时，因为不同数据类型不相等
+- 使用非严格相等时，它们相等
+- 使用数学式或其他比较方法时，`null`转化为`0`，`undefined`转化为`NaN`
+- `undefined`在比较中被转换为了`NaN`,`NaN`与任何值比较都会返回`false`
+- `undefined`只与`null`相等
+
     
     
     
