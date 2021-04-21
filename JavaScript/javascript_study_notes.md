@@ -380,7 +380,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 - 
 
-    ```javascript
+    ```js
     let n = 2;
     n += 5;//now n = 7(n = n + 5)
     n *= 2;//now n = 14(n = n * 2)
