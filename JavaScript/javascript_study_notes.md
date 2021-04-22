@@ -128,17 +128,17 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### Number类型
 
-`number`类型代表整数和浮点数<br />
-特殊数值:`Infinity`、`-Infinity`、`NaN`
+1.`number`类型代表整数和浮点数<br />
+2.特殊数值:`Infinity`、`-Infinity`、`NaN`
 
-- `Infinity`代表无穷大,比任何数字都大;
+- `Infinity`代表无穷大,比任何数字都大（通过除以0等到它）;
 
     ```javascript
     alert(1 / 0);
     alert(Infinity);
     ```
     
-- `NaN`代表一个计算错误;
+- `NaN`代表一个计算错误（粘性的）;
 
     ```javascript
     alert('abc' / 12);
@@ -146,7 +146,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     
 ### BigInt类型
 
-- `Number`类型有大小限制,使用`BigInt`类型表示任意长度的整数(**在整数末尾添加n**);
+- `Number`类型有大小限制,使用`BigInt`类型表示任意长度的整数(**在整数末尾添加n**)；
 
     ```javascript
     const bigInt = 11111111111233333333333333n;
@@ -190,7 +190,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     
 ### typeof运算符
 
-`typeof`返回参数的类型<br />
+- `typeof`返回参数的类型<br />
 1.函数形式:`typeof(x)`<br />
 2.运算符形式:`typeof x`
 
@@ -245,7 +245,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
    
 ### 字符串转换
 
-- 
+- `alert(value)`将`value`转换为字符串类型
    
     ```javascript
     let Value = true;
