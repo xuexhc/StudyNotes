@@ -4,7 +4,7 @@
 
 ### Script 标签
 
-- 在HTML文档中使用`Script`标签插入JavaScript程序;
+- 在HTML文档中使用`Script`标签插入JavaScript程序；
 
     ```html
     <html>
@@ -495,6 +495,23 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 - 使用数学式或其他比较方法时，`null`转化为`0`，`undefined`转化为`NaN`
 - `undefined`在比较中被转换为了`NaN`,`NaN`与任何值比较都会返回`false`
 - `undefined`只与`null`相等
+
+## 条件分支`if`和`?`
+
+### if语句
+
+- `if`语句计算括号里的条件表达式，计算结果为`true`则执行对应代码块（使用`{}`包装代码块）
+
+    ```js
+    let year = prompt ('How old are you?', '');
+    if (year == 20) {
+        alert ('yes');
+        alert ('ok');
+    }
+    ```
+
+
+
 
     
     
