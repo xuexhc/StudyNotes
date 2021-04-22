@@ -20,9 +20,9 @@
 
 - 通过`src`特性将JavaScript代码添加到HTML中;
 
-```html
-<script src = "/path/to/script.js"></script>
-```
+    ```html
+    <script src="/path/to/script.js"></script>
+    ```
 
 一个单独的`<script>`不能同时使用`src`特性和内部包裹代码
 
