@@ -18,7 +18,7 @@
     
 ### 外部脚本
 
-- 通过`src`特性将JavaScript代码添加到HTML中;
+- 通过`src`特性将JavaScript代码添加到HTML中；
 
     ```html
     <script src="/path/to/script.js"></script>
@@ -30,7 +30,7 @@
 
 ### 语句
 
-- 语句之间用分号进行分割,每条语句独占一行;
+- 语句之间用分号进行分割,每条语句独占一行；
 
     ```javascript
     alert('Hello');
@@ -39,11 +39,11 @@
     
 ### 注释
 
-- 单行注释
+- 单行注释；
 
     `//这是单行注释`
 
-- 多行注释
+- 多行注释；
 
     <pre>/*这是
     多行注释
@@ -53,7 +53,7 @@
 
 ### strict
 
-- `"use strict"`一般处于脚本最顶部,如处于函数主体开头,则只在该函数中生效;
+- `"use strict"`一般处于脚本最顶部,如处于函数主体开头,则只在该函数中生效；
 
     ```javascript
     "use strict"
@@ -63,20 +63,20 @@
 
 变量是数据的"命名存储",使用`let`创建变量
 
-- 创建一个名称为'message'的变量,使用`=`为它赋值,并通过变量名称访问它;
+- 创建一个名称为'message'的变量,使用`=`为它赋值,并通过变量名称访问它；
 
     ```javascript
     let message = 'Hello';
     alert(message);
     ```
-- 改变变量的值;
+- 改变变量的值；
 
     ```javascript
     let message = 'Hello';
     message = 'World';
     ```
 
-- 将变量的值拷贝给另一个变量;
+- 将变量的值拷贝给另一个变量；
 
     ```javascript
     let A = 'Hello';
@@ -103,7 +103,7 @@
 
 ### 常量
 
-- 使用`const`来创建一个常量(**无法重新赋值**);
+- 使用`const`来创建一个常量(**无法重新赋值**)；
 
     ```javascript
     const num = 1.12;
@@ -114,7 +114,7 @@
 1.使用大写字母和下划线来命名这种常量<br />
 2.在执行之前就已知的常量可以用这种方法来命名
 
-- 创建COLOR_RED常量,并使用color变量选择这个常量的值;
+- 创建COLOR_RED常量,并使用color变量选择这个常量的值；
 
     ```javascript
     const COLOR_RED = "#F00";
@@ -131,14 +131,14 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 1.`number`类型代表整数和浮点数<br />
 2.特殊数值:`Infinity`、`-Infinity`、`NaN`
 
-- `Infinity`代表无穷大,比任何数字都大（通过除以0等到它）;
+- `Infinity`代表无穷大,比任何数字都大（通过除以0等到它）；
 
     ```javascript
     alert(1 / 0);
     alert(Infinity);
     ```
     
-- `NaN`代表一个计算错误（粘性的）;
+- `NaN`代表一个计算错误（粘性的）；
 
     ```javascript
     alert('abc' / 12);
@@ -155,7 +155,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 三种包含字符串的方式,单引号、双引号和反引号<br />
 
-- 反引号是**功能扩展**引号,可以通过将变量和表达式包装在`${...}`中,来嵌入到字符串中;
+- 反引号是**功能扩展**引号,可以通过将变量和表达式包装在`${...}`中,来嵌入到字符串中；
 
     ```javascript
     let name = 'xue';
@@ -165,7 +165,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     
 ### Boolean类型
 
-- `boolean`类型只包含两个值:`true`和`false`,也可作为比较的结果
+- `boolean`类型只包含两个值:`true`和`false`,也可作为比较的结果；
 
     ```javascript
     let nameFieldChecked = true;
@@ -174,14 +174,14 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     
 ### null值
 
-- `null`仅仅代表这是一个**无、空**或者**值未知**的特殊值
+- `null`仅仅代表这是一个**无、空**或者**值未知**的特殊值；
 
     ```javascript
     let age = null;
     ```
 ### undefined值
 
-- `undefined`的含义是**未被赋值**
+- `undefined`的含义是**未被赋值**；
 
     ```javascript
     let x;
@@ -215,7 +215,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### `alert`
 
-- 弹出带有信息的**模态窗**,必须处理完当前窗口后才可与其他部分交互
+- 弹出带有信息的**模态窗**,必须处理完当前窗口后才可与其他部分交互；
 
     ```javascript
     alert('Hello');
@@ -223,7 +223,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### `prompt`
 
-- `prompt`返回用户在`input`框中输入的文本,取消输入则返回`null`
+- `prompt`返回用户在`input`框中输入的文本,取消输入则返回`null`；
 
     ```javascript
     let age = prompt('How old?', '');
@@ -232,7 +232,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### `confirm`
 
-- `confirm`显示一个带有问题以及确定和取消两个按钮的模态窗口
+- `confirm`显示一个带有问题以及确定和取消两个按钮的模态窗口；
    
     ```javascript
     let isBoss = confirm('Are you the boss?');
@@ -245,7 +245,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
    
 ### 字符串转换
 
-- `alert(value)`将`value`转换为字符串类型
+- `alert(value)`将`value`转换为字符串类型；
    
     ```javascript
     let Value = true;
@@ -257,7 +257,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
    
 ### 数字型转换
    
-- 在算数函数和表达式中,会自动number类型转换
+- 在算数函数和表达式中,会自动number类型转换；
 
     ```javascript
     alert('6' / '2');//3
@@ -269,7 +269,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     alert(typeof num);//number 
     ```
     
-- number 类型转换规则
+- number 类型转换规则；
     
     ```javascript
     alert(Number(true));//1
@@ -282,8 +282,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     ```
 ### 布尔型转换
 
-- 为"空"的值(`0`、空字符串、`null`、`undefined`和`NaN`)将变为`false`<br />
-  其他变为`true`
+- 为"空"的值(`0`、空字符串、`null`、`undefined`和`NaN`)将变为`false`其他变为`true`；
 
     ```js
     alert(Boolean(0));//false
