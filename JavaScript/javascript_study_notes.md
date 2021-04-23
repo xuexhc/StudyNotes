@@ -443,11 +443,17 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     alert(2 * counter++);//2
     ```
 ### 位运算符
-    
+
+?
     
 ### 逗号运算符
 
+- 处理多个语句，只有最后的语句结果会被返回（优先级最低）
 
+    ```javascript
+    let a =(1 + 2, 4 + 2);
+    alert (a);//6
+    ```
 
 ## 值的比较
 
@@ -509,11 +515,63 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     }
     ```
 
+### 布尔转换
 
+- `if`语句计算圆括号内的表达式，将计算结果转换为布尔型
 
+    ```javascript
+    if (0) {...}//不执行代码块
+    ```
 
+### else语句
+
+- 判断不成立，则执行`else`内部代码
+
+    ```javascript
+    if (year == 2015) {
+        alert ('Good');
+    } else {
+        alert ('Bad');
+    }
+    ```
+
+### 多个条件：else if
+
+    ```javascript
+    if (year < 2015) {
+        alert ('Too early');
+    } else if (year > 2015) {
+        alert ('Too late');
+    } else {
+        alert ('Exactly');
+    }
+    ```
+
+### 条件运算符`?`
+
+    ```javascript
+    let accessAllowed = (age > 18) ? true : false;
+    ```
     
+### 多个`?`
+
+    ```javascript
+    let message = (age < 3) ? 'Hi, baby' :
+    (age < 18) ? 'Hello' :
+    (age < 100) ? 'Greetings' :
+    'What an unusual age';
+    ```
     
+### `if`的非常规使用
+
+- 使用`?`代替if语句
+
+    ```javascript
+    let company = prompt('Which company created JavaScript?', '');
+    
+    (company == 'Netscape') ?
+        alert('Right!') : alert('Wrong.');
+    ```
     
     
     
