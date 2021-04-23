@@ -572,7 +572,29 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     (company == 'Netscape') ?
         alert('Right!') : alert('Wrong.');
     ```
-    
+
+## 逻辑运算符
+
+### `||`或
+
+- 参与运算的任意一个参数为`true`，返回的结果就为`true`,否则为`false`
+- 如果操作数不是布尔值，则转化为布尔值进行运算
+
+    ```javascript
+    let hour = 9;
+    if (hour < 10 || hour > 18) {
+        alert ('The office is closed.');
+    }
+    ```
+
+#### 或运算寻找第一个真值
+
+
+### `&&`与
+
+#### 与运算寻找第一个真值
+
+### `!`非
     
     
     
