@@ -644,8 +644,28 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     alert (Boolean (null))//false
     ```
     
+## 空值合并运算符`??`
+
+- 值既不是`null`也不是`undefined`的表达式称为**已定义的**
+- 如果第一个参数不是`null/undefined`则`??`返回第一个参数，否则返回第二个参数
+- `??`为可能是未定义的变量提供一个默认值
+
+    ```javascript
+    let user;
+    alert (user ?? 'john');//john
+    ```
+
+    ```javascript
+    let firstName = null;
+    let lastName = undefined;
+    let nickName = 'supercoder';
     
-    
+    alert (firstName ?? lastName ?? nickName ?? 'Anonymous');
+    ```
+   
+- 可以使用`||`替换`??`，两者有区别
+1.`||`返回第一个**真**值
+2.`??`返回第一个**已定义**的值
     
     
     
