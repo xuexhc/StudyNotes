@@ -589,21 +589,71 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 #### 或运算寻找第一个真值
 
+- 一个或运算`||`的链，将返回第一个真值，如果没有真值就返回最后一个值（原始值）
+
+    ```javascript
+    alert (null || 1);//1
+    alert (null || undefined || 0);//0
+    ```
+    
+- 获取变量列表或表达式第一个真值（没有设置则用`'Anonymous'`）
+
+    ```javascript
+    let firstName = '';
+    let lastName = '';
+    let nickName = 'SuperCoder';
+    alert (firstName || lastName || nickName || 'Anonymous');//SuperCoder
+    ```
+
+- 达到第一个真值后不处理其他参数直接返回该值，这称为**短路求值**
+
+    ```javascript
+    true || alert ('no print');
+    false || alert ('print');//print
+    ```
 
 ### `&&`与
 
+- 两个操作数都为真值时，与运算返回`true`，否则返回`false`
+
+    ```javascript
+    alert (true && true);//true
+    alert (false && true);//false
+    
+    if (12 < 13 && 2 > 1) {
+        alert ('YES');
+    }//YES
+    ```
+
 #### 与运算寻找第一个真值
 
+- 如果结果是`false`就停止计算返回初始值，如果都是`true`则返回最后一个操作数
+
+    ```javascript
+    alert (1 && 0);//0
+    alert (null && 1);//null
+    ```
+
 ### `!`非
+
+- 返回相反的值
+
+    ```javascript
+    alert (!0);//true
+    alert (!!null);//false
+    alert (Boolean (null))//false
+    ```
     
     
     
     
     
     
-    
-    
-    
+
+
+
+
+
 
 
 ## JavaScript 布局
