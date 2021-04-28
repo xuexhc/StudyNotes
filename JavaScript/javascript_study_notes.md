@@ -507,7 +507,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 - `if`语句计算括号里的条件表达式，计算结果为`true`则执行对应代码块（使用`{}`包装代码块）
 
-    ```js
+    ```javascript
     let year = prompt ('How old are you?', '');
     if (year == 20) {
         alert ('yes');
@@ -537,6 +537,8 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### 多个条件：else if
 
+- 例
+
     ```javascript
     if (year < 2015) {
         alert ('Too early');
@@ -549,11 +551,15 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### 条件运算符`?`
 
+- 例
+
     ```javascript
     let accessAllowed = (age > 18) ? true : false;
     ```
     
 ### 多个`?`
+
+- 例
 
     ```javascript
     let message = (age < 3) ? 'Hi, baby' :
