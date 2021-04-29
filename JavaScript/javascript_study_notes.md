@@ -672,9 +672,80 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 - 可以使用`||`替换`??`，两者有区别
 1.`||`返回第一个**真**值
 2.`??`返回第一个**已定义**的值
+
+### 优先级
+
+`??`运算符比`*`运算符等级低
+
+    ```javascript
+    let height = null;
+    let width = null;
+    let area = height ?? 100 * width ?? 50;
+    alert (area);//错误的结果
+    ```
+
+### `??`与`&&`和`||`使用需要添加括号明确优先级
+
+    ```javascript
+    let x = (1 && 2) ?? 3;
+    alert (x);//2
+    ```
+
+## 循环：while和for
+
+### `while`循环
+
+- 需要重复一些操作时使用`while`循环
+
+    ```javascript
+    let i = 0;
+    while (i < 3) {
+    alert (i);
+    i++;
+    }
+    ```
+
+- 单行循环体不需要大括号
+
+    ```javascript
+    let i = 3;
+    while (i) alert (i--);
+    ```
+
+### `do...while`循环
+
+- 循环首先执行循环体，然后检查条件，当条件为真时，重复执行循环体
+
+    ```javascript
+    let i = 0;
+    do {
+    alert (i);
+    i++;
+    } while (i < 3);
+    ```
     
-    
-    
+### `for`循环
+
+- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
