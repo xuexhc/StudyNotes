@@ -764,7 +764,33 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### 跳出循环
 
-- 
+- 使用`break`指令可以随时终止循环
+
+    ```javascript
+    let sum = 0;
+    while (true) {
+        let value = +prompt ('Enter a number', '');
+        if (!value) break;
+        sum += value;
+    }
+    alert ('Sum:' + sum);
+    ```
+    
+### 继续下一次迭代
+
+- `continue`不会停掉整个循环，而是停止当前这一次迭代，并强制启动新一轮循环
+
+    ```javascript
+    for (let i = 0; i < 10; i++) {
+        if (i % 2) {
+        alert (i);
+        }
+    }
+    ```
+    
+### `break/continue`标签
+
+
 
 
 
