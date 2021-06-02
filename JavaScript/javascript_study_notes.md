@@ -61,9 +61,9 @@
     
 ## 变量
 
-变量是数据的"命名存储",使用`let`创建变量
+变量是数据的"命名存储"，使用`let`创建变量
 
-- 创建一个名称为'message'的变量,使用`=`为它赋值,并通过变量名称访问它；
+- 创建一个名称为'message'的变量，使用`=`为它赋值，并通过变量名称访问它；
 
     ```javascript
     let message = 'Hello';
@@ -95,7 +95,7 @@
     let myVeryLongName = 'xuehuicong';
     ```
     
-- 未采用"use strict"时,可以直接赋值来创建变量(**不推荐**)；
+- 未采用"use strict"时，可以直接赋值来创建变量(**不推荐**)；
 
     ```javascript
     num = 5;
@@ -114,7 +114,7 @@
 1.使用大写字母和下划线来命名这种常量<br />
 2.在执行之前就已知的常量可以用这种方法来命名
 
-- 创建COLOR_RED常量,并使用color变量选择这个常量的值；
+- 创建COLOR_RED常量，并使用color变量选择这个常量的值；
 
     ```javascript
     const COLOR_RED = "#F00";
@@ -124,14 +124,14 @@
     
 ## 数据类型
 
-javascript是动态类型编程语言,变量可以保存任何数据类型
+javascript是动态类型编程语言，变量可以保存任何数据类型
 
 ### Number类型
 
 1.`number`类型代表整数和浮点数<br />
 2.特殊数值:`Infinity`、`-Infinity`、`NaN`
 
-- `Infinity`代表无穷大,比任何数字都大（通过除以0等到它）；
+- `Infinity`代表无穷大，比任何数字都大（通过除以0等到它）；
 
     ```javascript
     alert(1 / 0);
@@ -146,16 +146,16 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     
 ### BigInt类型
 
-- `Number`类型有大小限制,使用`BigInt`类型表示任意长度的整数(**在整数末尾添加n**)；
+- `Number`类型有大小限制，使用`BigInt`类型表示任意长度的整数(**在整数末尾添加n**)；
 
     ```javascript
     const bigInt = 11111111111233333333333333n;
     ```
 ### String类型
 
-三种包含字符串的方式,单引号、双引号和反引号<br />
+三种包含字符串的方式，单引号、双引号和反引号<br />
 
-- 反引号是**功能扩展**引号,可以通过将变量和表达式包装在`${...}`中,来嵌入到字符串中；
+- 反引号是**功能扩展**引号，可以通过将变量和表达式包装在`${...}`中，来嵌入到字符串中；
 
     ```javascript
     let name = 'xue';
@@ -165,7 +165,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
     
 ### Boolean类型
 
-- `boolean`类型只包含两个值:`true`和`false`,也可作为比较的结果；
+- `boolean`类型只包含两个值:`true`和`false`，也可作为比较的结果；
 
     ```javascript
     let nameFieldChecked = true;
@@ -197,7 +197,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 - 所有数据类型例子;<br />
 1.`Math`是一个提供数学运算内建的`object`<br />
 2.`null`的数据类型是`object`是错误的<br />
-3.`alert`t在javascript中是一个函数
+3.`alert`在javascript中是一个函数
 
     ```javascript
     typeof undefined;//'undefined'
@@ -215,7 +215,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### `alert`
 
-- 弹出带有信息的**模态窗**,必须处理完当前窗口后才可与其他部分交互；
+- 弹出带有信息的**模态窗**，必须处理完当前窗口后才可与其他部分交互；
 
     ```javascript
     alert('Hello');
@@ -223,7 +223,7 @@ javascript是动态类型编程语言,变量可以保存任何数据类型
 
 ### `prompt`
 
-- `prompt`返回用户在`input`框中输入的文本,取消输入则返回`null`；
+- `prompt`返回用户在`input`框中输入的文本，取消输入则返回`null`；
 
     ```javascript
     let age = prompt('How old?', '');
