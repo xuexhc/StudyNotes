@@ -491,7 +491,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 
     ```javascript
     alert ('' === false);//false
-    alert (`abc` !== false);//true
+    alert ('abc' !== false);//true
     ```
 ### null与undefined
 
