@@ -248,8 +248,8 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 - `alert(value)`将`value`转换为字符串类型；
    
     ```javascript
-    let Value = true;
-    alert(typeof 123);//boolean
+    let value = true;
+    alert(typeof value);//boolean
     
     value = String(value);
     alert(typeof value);//string
