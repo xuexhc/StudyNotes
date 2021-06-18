@@ -791,10 +791,9 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 
     ```javascript
     for (let i = 0; i < 10; i++) {
-        if (i % 2) {
+        if (i % 2 == 0) continue;
         alert (i);
-        }
-    }
+    }//1,3,5,7,9
     ```
     
 ### `break/continue`标签
