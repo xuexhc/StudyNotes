@@ -131,7 +131,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 1.`number`类型代表整数和浮点数<br />
 2.特殊数值:`Infinity`、`-Infinity`、`NaN`
 
-- `Infinity`代表无穷大，比任何数字都大（通过除以0等到它）；
+- `Infinity`代表无穷大，比任何数字都大（通过除以0得到它）；
 
     ```javascript
     alert(1 / 0);
