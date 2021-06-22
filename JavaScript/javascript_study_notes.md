@@ -878,12 +878,132 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
         alert ('The result is strange. Really.');
     }
     ```
+    
+## 函数
 
+- 函数是程序的主要`构建模块`，函数可以使代码多次被调用不需要重复写
 
+### 函数声明
 
+- `function`是关键字，`showMessage`是函数名，`（）`之间是参数，`{}`之间是函数体,通过`showMessage()`调用函数
 
+    ```javascript
+    function showMessage() {
+        alert ('Hello');
+    }
+    
+    showMessage();
+    ```
+    
+### 局部变量
 
+- 在函数中声明的变量只在该函数内部可见
+- 函数外声明的变量称为全局变量
 
+    ```javascript
+    function showMessage () {
+        let message = 'Hello';
+        alert (message);
+    }
+    
+    showMessage ();//Hello
+    alert (message);//错误，变量是函数内部变量
+    ```
+    
+### 外部变量
+
+- 函数对外部变量拥有全部的访问权限，函数也可以修改外部变量
+
+    ```javascript
+    let userName = 'John';
+    
+    function showMessage() {
+        userName = "Bob";
+        
+        let message = 'Hello, ' + userName;
+        alert (message);
+    }
+
+    alert (userName);//John
+    showMessage();//Hello, Bob
+    alert (userName);Bob
+    ```
+    
+- 如果在函数内部声明了同名变量，那么函数会遮蔽外部变量
+
+    ```javascript
+    let userName = 'John';
+
+    function showMessage() {
+    let userName = "Bob";
+    
+    let message = 'Hello,' + userName;
+    alert (message);
+    }
+    
+    showMessage();//Hello, Bob
+    alert (userName);//John,函数没有访问外部变量
+    ```
+
+### 参数
+
+- 使用参数将任意数据传递给函数
+
+    ```javascript
+    function showMessage(from, text) {
+        alert (from + ': ' + text);
+    }
+    showMessage('Ann', 'Hello!');//Ann: Hello!
+    ```
+    
+- 变量`from`传递给函数，（函数会修改`from`变量） ，但在函数外部看不到更改，函数修改的是复制的变量值副本
+
+    ```javascript
+    function showMessage(from, text) {
+        from = '*' + ':' + '*';
+        alert (from + ': ' + text);
+    }
+    let from = 'Ann';
+    
+    showMessage(from, "Hello");//*Ann*: Hello
+    alert (from);//Ann
+    ```
+
+### 默认值
+
+- 如果未提供参数，那么其默认值则是`undefined`，提供的默认值是字符串也可以是表达式
+
+    ```javascript
+    function showMessage(from, text = 'no text given') {
+        alert (from + ': ' + text);
+    }
+    
+    showMessag('Ann');// Ann: no text given
+    ```
+    
+### 后备的默认参数
+
+- 将参数默认值放在函数执行而不是函数声明也行
+
+    ```javascript
+    function showMessage(text) {
+        if (text === undefined) {
+            text = 'empty message';
+        }
+        alert (text);
+    }
+    
+    showMessage();//empty message
+    ```
+- 使用`||`运算符
+
+    ```javascript
+    ```
+
+- 使用空值合并运算符`??`，`0`会被视为正常值不被合并
+
+    ```javascript
+    ```
 
 
 
