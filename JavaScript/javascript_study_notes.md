@@ -826,7 +826,58 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
     }
     alert ('Done!');
     ```
+    
+## `Switch`语句
 
+- `switch`语句至少有一个`case`代码块和一个可选的`default`代码块
+
+### 语法
+
+- 比较`a`值与第一个`case`（也就是3）是否严格相等，然后第二个`case`
+- 如果相等，`switch`语句就执行相应`case`下的代码块，直到遇到`break`语句
+- 如果没有符合的`case`，则执行`default`代码块
+- **如果没有`break`, 程序将不经过任何检查就会继续执行下一个`case`**
+
+    ```javascript
+    let a = 2 + 2;
+    
+    switch (a) {
+        case 3:
+            alert ("Too small");
+            break;
+        case 4:
+            alert ("Exactly!");
+            break;
+        case 5:
+            alert ("Too large");
+            break;
+        default:
+            alert ("I don't know such values");
+    }
+    ```
+
+### `case`分组
+
+- 共享同一段代码的几个`case`分支可以被分为一组并执行同样的代码
+
+    ```javascript
+    let a = 3;
+    
+    switch (a) {
+        case 4:
+            alert ('Right!');
+            break;
+            
+        case 3:
+        case 5:
+            alert ('Wrong!');
+            alert ("Why don't you take a math class?");
+            break;
+            
+        default:
+        alert ('The result is strange. Really.');
+    }
+    ```
 
 
 
