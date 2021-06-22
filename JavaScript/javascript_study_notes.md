@@ -759,6 +759,16 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
     }
     alert (i);//错误，没有这个变量
     ```
+    
+- 在循环体外声明变量
+
+    ```javascript
+    let i = 0;
+    for (; i < 3; i++) {
+        alert (i);//0, 1, 2
+    }
+    alert (i);//3
+    ```
 
 ### 省略语句段
 
@@ -796,7 +806,26 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
     }//1,3,5,7,9
     ```
     
+- 禁止`break`和`continue`在`?`右边
+
+    ```javascript
+    (i > 5) ? alert(i) : continue;
+    ```
+    
 ### `break/continue`标签
+
+- 从多层嵌套中跳出来，需要使用标签（循环之前带有冒号的标识符）
+- 标签不能跳到代码的任意位置
+
+    ```javascript
+    outer: for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            let input = prompt (`Value at coords (${i}, ${j})`, '');
+            if (!input) break outer; 
+        }
+    }
+    alert ('Done!');
+    ```
 
 
 
