@@ -1129,6 +1129,8 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
     ask("Do you agree?", showOk, showCancel);
     ```
     
+- 直接在`ask()`内进行函数声明，称为匿名**函数**（没有分配变量），在`ask`外无法访问
+
     ```javascript //简写
     function ask(question, yes, no) {
         if (confirm(question)) yes()
@@ -1141,14 +1143,90 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
         funciton() {alert ("You canceled the execution.");}
     );
     ```
+    
+### 函数表达式 vs 函数声明
 
+- 函数表达式：在代码执行到达时被创建，并且仅从那一刻可用
+- 函数声明：在函数声明被定义前，就可以被调用
 
+- 严格模式下，当一个函数声明在一个代码块内时，它在该代码块内的任何位置都是可见的，但在代码块外不可见
 
+    ```javascript
+    "use strict"
+    let age = 16;
+    
+    if (age < 18) {
+        welcome();//Hello
 
+        function welcome() {
+            alert ("Hello!");
+        }
+    welcome();//Hello
+    } else {
 
+        function welcome() {
+            alert ("Greetings!");
+        }
+    }
 
+    welcome();//Error
+    ```
+    
+    ```javascript
+    "use strict"
+    let age = prompt ("What is your age?", 18);
 
+    let welcome = (age < 18) ?
+        function welcome() {alert ("Hello!");} :
+        function welcome() {alert ("Greetings!");};
 
+    welcome();
+    ```
+    
+## 箭头函数
+
+- 使用参数对`=>`右侧求值并返回结果
+
+    ```javascript
+    let sum = (a, b) => a + b;
+    alert ( sum(1, 2) );//3
+    ```
+- 只有一个参数和无参数
+
+    ```javascript
+    let double = n => n * 2;
+    alert ( double(3) );//6
+    ```
+    
+    ```javascript
+    let sayHi = () => alert ("Hello!");
+    sayHi();//Hello!
+    ```
+
+- 动态创建一个函数
+
+    ```javascript
+    let age = prommpt ("What is your age?", 18);
+    
+    let welcome = (age < 18) ?
+        () => alert ("Hello!") :
+        () => alert ("Greetings!");
+
+    welcome();
+    ```
+    
+### 多行的箭头函数
+
+- 使用花括号开始一个多行函数，使用一个`return`将需要返回的值进行返回
+
+    ```javascript
+    let sum = (a, b) => {
+        let result = a + b;
+        return result;
+    };
+
+    alert ( sum(2, 4) );//6
+    ```
 
 
 
