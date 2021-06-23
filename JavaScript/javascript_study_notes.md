@@ -998,12 +998,188 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 - 使用`||`运算符
 
     ```javascript
+    function showMessage(text) {
+        text = text || 'empty';
+        alert (text);
+    }
+    
+    showMessage();//empty
     ```
 
 - 使用空值合并运算符`??`，`0`会被视为正常值不被合并
 
     ```javascript
+    function showCount(count) {
+        alert (count ?? 'unknown');
+    }
+
+    showCount(0);//0
+    showCount(null);//unknown
+    showCount();//unknown
     ```
+    
+### 返回值
+
+- 函数可以将一个值返回到调用代码中作为结果
+
+    ```javascript
+    function sum(a, b) {
+        return a + b;
+    }
+    let result = sum(2, 3);
+    alert (result);//5
+    ```
+    
+- 空值的`return`或没有`return`的函数返回值为`undefined`
+
+    ```javascript
+    function doNothing() {}
+    alert (doNothing() === undefined);// true
+    ```
+    
+    ```javascript
+    function doNothing() {
+        return;
+    }
+    
+    alert (doNothing() === undefined);//true
+    ```
+    
+- `return`应与表达式在同一行，或者使用`()`
+
+    ```javascript
+    return
+    (some + long)//error
+
+    return;
+    (some + long)//error
+
+    return (
+        some + long
+        + or
+    )//将表达式放在多行
+    ```
+
+### 函数命名
+
+- 用动词前缀开始一个函数
+
+- `"get..."`：返回一个值
+- `"calc..."`：计算某些内容
+- `"create..."`：创建某些内容
+- `"check..."`：检查某些内容并返回boolean值
+
+    ```javascript
+    showMessage()  //显示信息
+    getAge()  //返回age（gets it somehow）
+    calcSum()  //计算求和并返回结果
+    createForm()  //创建表格（通常会返回它）
+    checkPermission()  //检查权限并返回 true/false
+    ```
+
+- 一个函数一个行为，如需多个功能请创建更多函数
+
+### 函数 == 注释
+
+- 如果函数功能复杂，请拆分成几个函数
+
+    ```javascript
+    function showPrimes() {}
+    ```
+    
+## 函数表达式
+
+- 创建函数并分配给了一个变量
+
+    ```javascript
+    let sayHi = function() {
+        alert ("Hello");
+    };
+    ```
+- 函数是一个特殊值，我们可以复制它到其他变量
+
+    ```javascript
+    function sayHi() {
+        alert ('Hello');
+    }
+    
+    let func = sayHi;
+    func();//Hello
+    sayHi();//Hello
+    ```
+
+### 回调函数
+
+- `ask`的两个参数值`showOk`和`showCancel`称为回调函数
+
+    ```javascript
+    function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+    }
+
+    function showOk() {
+        alert ("You agreed.");
+    }
+
+    function showCancel() {
+        alert ("You canceled the execution.");
+    }
+    
+    ask("Do you agree?", showOk, showCancel);
+    ```
+    
+    ```javascript //简写
+    function ask(question, yes, no) {
+        if (confirm(question)) yes()
+        else no();
+    }
+
+    ask(
+        "Do you agree?",
+        function() {alert ("You agreed.");},
+        funciton() {alert ("You canceled the execution.");}
+    );
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
