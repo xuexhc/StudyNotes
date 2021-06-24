@@ -1227,20 +1227,136 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 
     alert ( sum(2, 4) );//6
     ```
+    
+## 对象
 
+- 通过带有可选**属性列表**的`{}`来创建对象
+- 一个属性是一个键值对`(key:value)`,`key`是一个字符串（属性名），`value`可以是任何值
 
+    ```javascript
+    let user = new Object();//构造函数
+    let user = {};//字面量
+    ```
+    
+### 文本和属性
 
+- 建位于冒号左边，值位于冒号右面，使用`.`符号访问属性值
+- `.`符号要求`key`是有效变量标识符：不包含空格，不以数字开头，不包含特殊符号（除`$`和`_`）
 
+    ```javascript
+    let user = {
+        name: "John",//name是建，John是值
+        age: 30,
+    };
+    
+    alert (user.age);//30
+    ```
+    
+- 属性的值可以是任意类型
 
+    ```javascript
+    user.isAdmin = true;
+    ```
 
+- 使用`delete`操作符移除属性
 
+    ```javascript
+    delete user.age;
+    ```
 
+- 多字词属性名必须加`""`
 
+    ```javascript
+    let user = {
+        name: "John",
+        age: 30,
+        "likes birds": true,
+    };
+    ```
+    
+- 用`const`声明的对象能修改值但不是修改绑定
 
+    ```javascript
+    const user = {
+        name: "John",
+    };
+    
+    user.name = "xue";
+    alert (user.name);//xue
+    
+    user = {
+        name: "xxx",        
+    };//Error
+    ```
+    
+### 方括号
 
+- 对于多词属性，使用`[]`
 
+    ```javascript
+    let user = {};
+    
+    user["likes birds"] = true;
+    
+    alert (user["likes birds"]);//true
+    
+    delete user["likes birds"];
+    ```
+    
+- 通过任意表达式获取属性名
 
+    ```javascript
+    let key = "likes birds";
 
+    user[key] = true;
+    ```
+    
+- 通过用户输入的`key`值，对变量`key`进行访问（`.`符号不能使用这种方式）
+
+    ```javascript
+    let user ={
+        name: "John",
+        age: 30,
+    };
+
+    let key = prompt ("What do you want to know about the user?", "name");
+    alert ( user[key] );//John
+    ```
+    
+### 计算属性
+
+- 当创建对象时，在对象字面量中使用方括号，这叫**计算属性**
+- `[fruit]`含义是属性名应该从`fruit`变量中获取
+- 如果输入`"apple"`，`bag`将变为`{apple: 5}`
+
+    ```javascript
+    let fruit = prompt ("Which fruit to buy?", "apple");
+    
+    let bag = {
+        [fruit]: 5,
+    };
+    
+    alert (bag.apple);//5
+    ```
+   
+    ```javascript
+    let fruit = prompt ("Which fruit to buy?", "apple");
+    let bag = {};
+    bag[fruit] = 5;
+
+    alert ( bag[fruit] ); 
+    ```
+    
+- 方括号中使用表达式
+
+    ```javascript
+    let fruit = 'apple';
+    let bag = {
+        [fruit + 'Computers']: 5,
+    };
+    ```
+
+### 属性值简写
 
 
 
