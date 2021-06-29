@@ -1352,22 +1352,128 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
     ```javascript
     let fruit = 'apple';
     let bag = {
-        [fruit + 'Computers']: 5,
+        [fruit + 'Computers']: 5,//bag.appleComputers = 5
     };
     ```
 
 ### 属性值简写
 
+- 使用已存在的变量当做属性名
 
+    ```javascript
+    function makeUser(name, age) {
+        return {
+            name: name,
+            age: age,
+        };
+    }
 
+    let user = makeUser("John", 30);
+    alert (user.name);//John
+    ```
+    
+- 属性值缩写(可以和正常方式混用)
 
+    ```javascript
+    function makeUser(name, age) {
+        return {
+            name,
+            age,
+        };
+    }
+    ```
+    
+### 属性名称限制
 
+- 属性命名不受任何限制，其他类型会被自动转换为字符串
 
+    ```javascript
+    let obj = {
+        0: "test",
+    };
+    alert (obj[0]);//test
+    alert (obj["0"]);//test
+    ```
+    
+### 属性存在性测试，`in`操作符
 
+- `javascript`能够访问任何属性，即使属性不存在也不会报错，读取不存在的属性只会得到`undefined`
+- `in`左边是**属性名**(带引号的字符串)
 
+    ```javascript
+    let user = {};
 
+    alert (user.age === undefined);//true
+    alert ("age" in user);//false
+    ```
+    
+- 省略引号，`in`左边是一个变量
 
+    ```javascript
+    let user = {age: 30,};
+    
+    let key = "age";
+    alert (key in user);//true
+    ```
 
+- 当属性存在，但存储的值是`undefined`时，需要使用`in`运算符
+
+    ```javascript
+    let obj = {
+        test: undefined,
+    };
+
+    alert (obj.test);//undefined
+    alert ("test" in obj);//true
+    alert (obj.test === undefined);//true
+    ```
+
+### `for...in`循环
+
+- 遍历一个对象中所有的建(key)，可以使用`for...in`循环
+
+    ```javascript
+    let user = {
+        name: "John",
+        age: 30,
+        isAdmin: true,
+    };
+    
+    for (let key in user) {
+        alert (key);
+        alert ( user[key] );
+    };
+    ```
+
+### 像对象一样排序
+
+- 整数属性会被进行排序，其他属性按照创建的顺序显示
+
+    ```javascript
+    let codes = {
+        "49": "Germany",
+        "41": "Switzerland",
+        "1": "USA",
+    };
+
+    for (let code in codes) {
+        alert (code);//1, 41, 49
+    };
+    ```
+    
+- 整数属性是指一个可以在不做任何更改的情况下与一个整数进行相互转换的字符串
+    
+    ```javascript
+    alert ( String(Math.trunc(Number("49"))) );//"49"
+    alert ( String(Math.trunc(Number("+49"))) );//"49"
+    alert ( String(Math.trunc(Number("1.2"))) );//1
+    alert ( String(Math.trunc(Number("-49"))) );//"-49"
+    ```
+    
+
+## 对象引用和复制
+
+- 
 
 
 
