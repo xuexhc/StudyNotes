@@ -1473,7 +1473,107 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 
 ## 对象引用和复制
 
-- 
+- 赋值了对象的变量存储的不是对象本身，而是该对象**在内存中的地址**，是对该对象的引用
+
+
+    ```javascript
+    let user = {
+        name: "John",
+    };
+    
+    let admin = user;
+    admin.name = "Pete";
+    alert (user.name);//Pete
+    ```
+    
+### 通过引用来比较
+
+- 仅当两个对象为同一对象时，两者才相等
+- 两者引用同一对象时，它们相等
+- 两个对象独立时，它们不相等
+
+    ```javascript
+    let a = {};
+    let b = a;
+    
+    alert (a == b);//true
+    alert (a === b);//true
+    ```
+    
+    ```javascript
+    let a = {};
+    let b = {};
+    
+    alert (a == b);//false
+    ```
+
+### 克隆与合并，Object.assign
+
+- 通过创建一个新的对象，遍历现有属性结构，在原始类型值的层面，将其复制到新对象
+
+    ```javascript
+    let user = {
+        name: "John",
+        age: 30,
+    };
+
+    let clone = {};
+
+    for (let key in user) {
+        clone[key] = user[key];
+    }
+    
+    clone.name = "Pete";
+    
+    alert (user.name);//原来对象中的`name`属性依然是`John`
+    ```
+    
+- 使用`Object.assign`方式
+
+    ```javascript
+    let user = { name: "John", };
+    
+    let permissions1 = { canView: true, };
+    let permissions2 = { canEdit: true, };
+    
+    Object.assign(user, permissions1, permissions2);
+    ```
+
+- 被拷贝的属性的属性名已经存在，那么它会被覆盖
+
+    ```javascript
+    let user = { name: "John", };
+
+    Object.assign(user, {name: "Pete",})
+    
+    alert (user.name);//Pete
+    ```
+
+### 深层克隆
+
+
+## 垃圾回收
+
+
+### 可达性
+
+
+
+## 对象方法,`this`
+
+- 创建对象来表示真实世界中的实体
+
+## 构造器和操作符`new`
+
+
+### 构造函数
+
+
+
+
+
+
+
 
 
 
