@@ -66,21 +66,21 @@
 - 创建一个名称为'message'的变量，使用`=`为它赋值，并通过变量名称访问它；
 
     ```javascript
-    let message = 'Hello';
+    let message = "Hello";
     alert(message);
     ```
 - 改变变量的值；
 
     ```javascript
-    let message = 'Hello';
-    message = 'World';
+    let message = "Hello";
+    message = "World";
     ```
 
 - 将变量的值拷贝给另一个变量；
 
     ```javascript
-    let A = 'Hello';
-    let B = 'World';
+    let A = "Hello";
+    let B = "World";
     B = A;
     ```
 
@@ -92,7 +92,7 @@
 - 命名包括多个单词，采用驼峰式命名法:除了第一个单词，都以大写字母开头；
 
     ```javascript
-    let myVeryLongName = 'xuehuicong';
+    let myVeryLongName = "xuehuicong";
     ```
     
 - 未采用"use strict"时，可以直接赋值来创建变量(**不推荐**)；
@@ -200,15 +200,15 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 3.`alert`在javascript中是一个函数
 
     ```javascript
-    typeof undefined;//'undefined'
-    typeof 0;//'number'
-    typeof 111n;//'bigint'
-    typeof true;//'bollean'
-    typeof 'abc';//'string'
-    typeof Symbol('id')//'symbol'
-    typeof Math;//'object'
-    typeof null;//'object'
-    typeof alert;//'function'
+    typeof undefined;//"undefined"
+    typeof 0;//"number"
+    typeof 111n;//"bigint"
+    typeof true;//"bollean"
+    typeof "abc";//"string"
+    typeof Symbol("id")//"symbol"
+    typeof Math;//"object"
+    typeof null;//"object"
+    typeof alert;//"function"
     ```
     
 ## 交互
@@ -226,7 +226,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 - `prompt`返回用户在`input`框中输入的文本，取消输入则返回`null`；
 
     ```javascript
-    let age = prompt('How old?', '');
+    let age = prompt("How old?", '');
     alert(`I am ${age} years old`);
     ```
 
@@ -235,7 +235,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 - `confirm`显示一个带有问题以及确定和取消两个按钮的模态窗口；
    
     ```javascript
-    let isBoss = confirm('Are you the boss?');
+    let isBoss = confirm("Are you the boss?");
     alert(isBoss);//确定为true,取消为false
     ```
     
@@ -262,7 +262,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
     ```javascript
     alert('6' / '2');//3
     
-    let str = '123';
+    let str = "123";
     alert(typeof str);//string
     
     let num = Number(str);//变成number类型的123
@@ -276,9 +276,9 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
     alert(Number(false));//0
     alert(Number(undefined));//NaN
     alert(Number(null));//0
-    alert(Number(' 123 '));//123(只有字符串由数字和空格组成才能转换成功)
+    alert(Number(" 123 "));//123(只有字符串由数字和空格组成才能转换成功)
     alert(Number(z123));//NaN
-    alert(Number(''));//0(字符串为空,转换结果为0)
+    alert(Number(""));//0(字符串为空,转换结果为0)
     ```
 ### 布尔型转换
 
@@ -286,14 +286,14 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 
     ```js
     alert(Boolean(0));//false
-    alert(Boolean(''));//false
+    alert(Boolean(""));//false
     alert(Boolean(null));//false
     alert(Boolean(undefined));//false
     alert(Boolean(NaN));//false
     
-    alert(Boolean(' '));//true
+    alert(Boolean(" "));//true
     alert(Boolean(1));//true
-    alert(Boolean('0'));//true
+    alert(Boolean("0"));//true
     ```
     
 ## 运算符
@@ -319,7 +319,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 - 加号`+`用于连接各个字符串；
 
     ```javascript
-    let s = 'My' + 'string';
+    let s = "My" + "string";
     alert(s);//Mystring
     ```
     
@@ -508,7 +508,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 - `if`语句计算括号里的条件表达式，计算结果为`true`则执行对应代码块（使用`{}`包装代码块）；
 
     ```javascript
-    let year = prompt ('How old are you?', '');
+    let year = prompt ("How old are you?", '');
     if (year == 20) {
         alert ('yes');
         alert ('ok');
@@ -579,7 +579,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 - 使用`?`代替if语句；
 
     ```javascript
-    let company = prompt('Which company created JavaScript?', '');
+    let company = prompt("Which company created JavaScript?", '');
     
     (company == 'Netscape') ?
         alert('Right!') : alert('Wrong.');
