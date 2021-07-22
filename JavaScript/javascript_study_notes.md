@@ -1140,7 +1140,7 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
     ask(
         "Do you agree?",
         function() {alert ("You agreed.");},
-        funciton() {alert ("You canceled the execution.");}
+        function() {alert ("You canceled the execution.");}
     );
     ```
     
