@@ -95,7 +95,7 @@
     let myVeryLongName = "xuehuicong";
     ```
     
-- 未采用"use strict"时，可以直接赋值来创建变量(**不推荐**)；
+- 未采用`use strict`时，可以直接赋值来创建变量(**不推荐**)；
 
     ```javascript
     num = 5;
