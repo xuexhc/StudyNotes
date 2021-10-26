@@ -1600,7 +1600,34 @@ javascript是动态类型编程语言，变量可以保存任何数据类型
 - 创建对象来表示真实世界中的实体
 
 
+
+
 ## 构造器和操作符`new`
+
+### 构造函数
+
+构造函数在技术上是常规函数
+
+- 它们的命名以大写字母开头
+- 他们只能由`new`操作符来执行
+
+    ```javascript
+    function User() {
+        this.name = name;
+        this.isAdmin = false;
+    }
+    
+    let user = new User("Jack");
+
+    alert(user.name);//Jack
+    alert(user.isAdmin);//false
+    ```
+    
+当函数被使用`new`操作符执行时，按照以下步骤：
+
+- 一个新的空对象被创建并分配给`this`
+- 函数体执行。通常它会修改`this`，并为其添加新的属性
+- 返回`this`的值
 
 
 ### 构造函数
